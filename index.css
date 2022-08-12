@@ -11,10 +11,6 @@ body { font-family:Arial, Helvetica, sans-serif;
 
       }
     
-    
-      
-
-
 #produto:hover{
     background-color: #4CAF50;
     color: white;
@@ -23,7 +19,27 @@ body { font-family:Arial, Helvetica, sans-serif;
     border-style: inset;
 }
 
-.product-card{
+.carrinho-compras {
+    width: 600px
+}
+
+.container {
+display: flex;
+flex-direction: row-reverse;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .product-card{
     margin-left: 60px;
     width: 250px;
     
@@ -38,7 +54,7 @@ body { font-family:Arial, Helvetica, sans-serif;
     margin-left: 350px;
     margin-top: -615px;
     width: 250px;
-}
+} */
 
 
 img{

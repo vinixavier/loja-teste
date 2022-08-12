@@ -6,116 +6,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Online</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="./index.js"></script>
 
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body background="images/3650-bg-cadastro_V01.jpg"> 
- 
+<body background="images/3650-bg-cadastro_V01.jpg">
+    <!-- <input type="text" id="produto">
+    <button class="button">Pesquisar</button> <br><br> -->
 
+    <div class="container">
+        <div class="carrinho-compras">
+            <h2>
+                Lista de Compras
+            </h2>
+            <ul id="lista_produto">
 
-    <input type="text" id="produto">
-    <button class="button">Pesquisar</button> <br><br>
-
-    <div class="models">
-    <div class="models-item">
-        <a href="">
-            <div class="models-item--img">
-                <img src="" width="50px"/>
+            </ul>
+        </div>
+        <!-- <div class="models">
+        <div class="models-item">
+            <a href="">
+                <div class="models-item--img">
+                     <img src="" width="50px"/>
                 </div>
 
                 <div class="models--item--add">+</div>
-                </a>
-                <div class="models--item--price">R$ --</div>
-                <div class="models--item--name">--</div>
-                <div class="models--item--desc">--</div>
-                </div>
-                <div class=" cart--item">
-                    <div class="cart--item--qtarea">
-                    <button class="cart--item--qtmenos">-</button>
-                    <div class="cart--item-qt">1</div>
-                    <button class="cart--item---qtmais">+</button>
-                    </div>
-                </div>
-             </div>  
-                    <header>
-                        <div class="menu-openner">
-                            <span>0</span>
-                            <span class="material-icons"> shopping_cart</span>
-                    </header>
-                    <main>
-                        <h1>Modelos</h1>
-                        <div class="modelo-area"></div>
-                    </main>
-                    <aside>
-                        <div class="cart-area">
-                            <div class="menu-closer">
-                            <span aria-checked="material-icons"></span>
-                            </div>
-                            <h1>Seus Modulos</h1>
-                            <div class="cart"></div>
-                            <div class="cart--details">
-                                <div class="cart--totalitem subtotal">
-                                    <span>Subtotal</span>
-                                    <span>R$ --</span>
-                                    </div>
-                                    <div class="cart--totalitem desconto">
-                                        <span>Desconto(-10%)</span>
-                                        <span>R$ --</span>
-                                        </div>
-                                        <div class="cart--finalizar">Finalizar a Compra</div>
-                    </aside>
-
-
-    <div class="container">
-<div class="product-card">
-
-    <img src="images/p1_preview_rev_1.png" alt="" width="200px">
-    <div class="product-card-description">  
-        Camisa Pulma Palmeiras 1</div>
-    <div class="product-card-price">299,00</div>
-    <div class="product-card-installments">10x29,90</div> 
-    <button class="button">Comprar</button>
-
-    <img src="images/camisa azul_preview_rev_1.png" alt="" width="200px">
-    <div class="product-card-description">  
-        Camisa Pulma Palmeiras 2</div>
-    <div class="product-card-price">299,00</div>
-    <div class="product-card-installments">10x29,90</div>
-    <button class="button">Comprar</button>
-
-    <img src="images/camisa1.png" alt="" width="200px"> 
-    <div class="product-card-description">Camisa Pulma Palmeiras 3</div>
-    <div class="product-card-price">299,00</div>
-    <div class="product-card-installments">10x29,90</div>
-    <button class="button">Comprar</button>
-
-</div>
-<div class="product-card2">
-    <img src="images/camisa2.png" alt="" width="200px"> 
-    <div class="product-card-description"> Camisa Pulma Palmeiras 4</div>
-    <div class="product-card-price">299,00</div>
-    <div class="product-card-installments">10x29,90</div>
-    <button class="button">Comprar</button>
-
-
-    <img src="images/camisa3_preview_rev_1.png" alt="" width="200px"> 
-    <div class="product-card-description">Camisa Pulma Palmeiras 5</div>
-    <div class="product-card-price">299,00</div>
-    <div class="product-card-installments">10x29,90</div>
-    <button class="button">Comprar</button>
-
-    <img src="images/camisa verde limao_preview_rev_1.png" alt="" width="200px"> 
-    <div class="product-card-description">Camisa Pulma Palmeiras 6</div>
-    <div class="product-card-price">299,00</div>
-    <div class="product-card-installments">10x29,90</div>
-    <button class="button">Comprar</button>
-
-    
+            </a>
+            <div class="models--item--price">R$ --</div>
+            <div class="models--item--name">--</div>
+            <div class="models--item--desc">--</div>
+        </div>
+        <div class=" cart--item">
+            <div class="cart--item--qtarea">
+                <button class="cart--item--qtmenos">-</button>
+                <div class="cart--item-qt">1</div>
+                <button class="cart--item---qtmais">+</button>
+            </div>
+        </div>
     </div>
- 
+    <header>
+        <div class="menu-openner">
+            <span>0</span>
+            <span class="material-icons"> shopping_cart</span>
+    </header>
+    <main>
+        <h1>Modelos</h1>
+        <div class="modelo-area"></div>
+    </main>
+    <aside>
+        <div class="cart-area">
+            <div class="menu-closer">
+                <span aria-checked="material-icons"></span>
+            </div>
+            <h1>Seus Modulos</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto(-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a Compra</div>
+    </aside>
+ -->
 
+        <div class="lista-produtos">
+            <div class="product-card">
+                <img src="images/p1_preview_rev_1.png" alt="" width="200px">
+                <div class="product-card-description">
+                    Camisa Pulma Palmeiras 1</div>
+                <div class="product-card-price">299,00</div>
+                <div class="product-card-installments">10x29,90</div>
+                <button id="btn_p1" onclick="AdicionarProdutoNoCarrinho('Camisa Pulma Palmeiras 1', 299.99)"
+                    class="button">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/camisa azul_preview_rev_1.png" alt="" width="200px">
+                <div class="product-card-description">
+                    Camisa Pulma Palmeiras 2</div>
+                <div class="product-card-price">299,00</div>
+                <div class="product-card-installments">10x29,90</div>
+                <button class="button">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/camisa1.png" alt="" width="200px">
+                <div class="product-card-description">Camisa Pulma Palmeiras 3</div>
+                <div class="product-card-price">299,00</div>
+                <div class="product-card-installments">10x29,90</div>
+                <button class="button">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/camisa2.png" alt="" width="200px">
+                <div class="product-card-description"> Camisa Pulma Palmeiras 4</div>
+                <div class="product-card-price">299,00</div>
+                <div class="product-card-installments">10x29,90</div>
+                <button class="button">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/camisa3_preview_rev_1.png" alt="" width="200px">
+                <div class="product-card-description">Camisa Pulma Palmeiras 5</div>
+                <div class="product-card-price">299,00</div>
+                <div class="product-card-installments">10x29,90</div>
+                <button class="button">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/camisa verde limao_preview_rev_1.png" alt="" width="200px">
+                <div class="product-card-description">Camisa Pulma Palmeiras 6</div>
+                <div class="product-card-price">299,00</div>
+                <div class="product-card-installments">10x29,90</div>
+                <button class="button">Comprar</button>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script src="./index.js"></script>
 
 </html>
