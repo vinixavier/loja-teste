@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Online</title>
-
     <link rel="stylesheet" href="index.css">
-</head>
+     
+</head> 
 
-<body background="images/3650-bg-cadastro_V01.jpg">
+<body >
     <!-- <input type="text" id="produto">
     <button class="button">Pesquisar</button> <br><br> -->
 
+
     <div class="container">
+
         <div class="carrinho-compras">
             <h2>
                 Lista de Compras
             </h2>
+            <button onclick="LimparLista()">Limpar Lista</button>
             <ul id="lista_produto">
 
-            </ul>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="texto">Total da Compra</td>
+                    <td><span id="total"></span></td>
+                </tr>
+                    </tfoot> </ul>
+           
+
+
+
         </div>
         <!-- <div class="models">
         <div class="models-item">
@@ -72,55 +85,87 @@
                 <div class="cart--finalizar">Finalizar a Compra</div>
     </aside>
  -->
+                        
+                    
+                        
+
 
         <div class="lista-produtos">
             <div class="product-card">
-                <img src="images/p1_preview_rev_1.png" alt="" width="200px">
-                <div class="product-card-description">
-                    Camisa Pulma Palmeiras 1</div>
+                <img src="images/p1_preview_rev_1.png" alt="" width="200px" >
+                <div class="product-card-description"> 
+                  <div button id="btn_p1" onclick="AdicionarProdutoNoCarrinho('Camisa Pulma Palmeiras 1', 299.99)"
+                    class="button"></button>  Camisa Pulma Palmeiras 1 </div>
+                </div>
+                <div class="entrega"> FRETE GRATIS</div><br>
                 <div class="product-card-price">299,00</div>
-                <div class="product-card-installments">10x29,90</div>
-                <button id="btn_p1" onclick="AdicionarProdutoNoCarrinho('Camisa Pulma Palmeiras 1', 299.99)"
-                    class="button">Comprar</button>
+                <div class="product-card-installments">ou 10x29,90</div>
+                <input class="qtd" type="number" value="0" min="1" max="10"> 
+            
+               
             </div>
             <div class="product-card">
                 <img src="images/camisa azul_preview_rev_1.png" alt="" width="200px">
                 <div class="product-card-description">
-                    Camisa Pulma Palmeiras 2</div>
+                    <div button id="btn_p1" onclick="AdicionarProdutoNoCarrinho('Camisa Pulma Palmeiras 2', 299.99)"
+                    class="button"></button>Camisa Pulma Palmeiras 2</div> 
+                </div>
+                <div class="entrega"> FRETE GRATIS</div><br>
                 <div class="product-card-price">299,00</div>
-                <div class="product-card-installments">10x29,90</div>
-                <button class="button">Comprar</button>
+                <div class="product-card-installments">ou 10x29,90</div>
+                <input class="qtd" type="number" value="0" min="1" max="10">
+                
+                
             </div>
             <div class="product-card">
                 <img src="images/camisa1.png" alt="" width="200px">
-                <div class="product-card-description">Camisa Pulma Palmeiras 3</div>
+                <div button id="btn_p1" onclick="AdicionarProdutoNoCarrinho('Camisa Pulma Palmeiras 3', 299.99)"
+                    class="button"></button>  Camisa Pulma Palmeiras 3</div>
+                    <div class="entrega"> FRETE GRATIS</div><br>
+                <div class="product-card-description"></div>
                 <div class="product-card-price">299,00</div>
-                <div class="product-card-installments">10x29,90</div>
-                <button class="button">Comprar</button>
+                <div class="product-card-installments">ou 10x29,90</div>
+                <input class="qtd" type="number" value="0" min="1" max="10">
+            
             </div>
             <div class="product-card">
                 <img src="images/camisa2.png" alt="" width="200px">
-                <div class="product-card-description"> Camisa Pulma Palmeiras 4</div>
+                <div button id="btn_p1" onclick="AdicionarProdutoNoCarrinho('Camisa Pulma Palmeiras 4', 299.99)"
+                    class="button"></button>  Camisa Pulma Palmeiras 4</div>
+                    <div class="entrega"> FRETE GRATIS</div><br>
+                <div class="product-card-description"></div>
                 <div class="product-card-price">299,00</div>
-                <div class="product-card-installments">10x29,90</div>
-                <button class="button">Comprar</button>
+                <div class="product-card-installments">ou 10x29,90</div>
+                <input class="qtd" type="number" value="0" min="1" max="10">
+        
             </div>
             <div class="product-card">
                 <img src="images/camisa3_preview_rev_1.png" alt="" width="200px">
-                <div class="product-card-description">Camisa Pulma Palmeiras 5</div>
+                <div button id="btn_p1" onclick="AdicionarProdutoNoCarrinho('Camisa Pulma Palmeiras 1', 299.99)"
+                    class="button"></button>  Camisa Pulma Palmeiras 5</div>
+                    <div class="entrega"> FRETE GRATIS</div><br>
+                <div class="product-card-description"></div>
                 <div class="product-card-price">299,00</div>
-                <div class="product-card-installments">10x29,90</div>
-                <button class="button">Comprar</button>
+                <div class="product-card-installments">ou 10x29,90</div>
+                <input class="qtd" type="number" value="0" min="1" max="10">
+               
             </div>
             <div class="product-card">
                 <img src="images/camisa verde limao_preview_rev_1.png" alt="" width="200px">
-                <div class="product-card-description">Camisa Pulma Palmeiras 6</div>
+                <div button id="btn_p1" onclick="AdicionarProdutoNoCarrinho('Camisa Pulma Palmeiras 1', 299.99)"
+                    class="button"></button>  Camisa Pulma Palmeiras 6</div>
+                    <div class="entrega"> FRETE GRATIS</div><br>
+                <div class="product-card-description"></div>
                 <div class="product-card-price">299,00</div>
-                <div class="product-card-installments">10x29,90</div>
-                <button class="button">Comprar</button>
+                <div class="product-card-installments">ou 10x29,90</div>
+                <input class="qtd" type="number" value="0" min="1" max="10"> <br><br>
+               
             </div>
         </div>
     </div>
+    <div class="total">
+
+</div>
 </body>
 
 <script src="./index.js"></script>
