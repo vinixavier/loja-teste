@@ -101,7 +101,7 @@ img {
   height: 250px;
 }
 
-.bordas {
+/* .bordas {
   padding-top: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
@@ -109,10 +109,17 @@ img {
   -webkit-box-shadow: inset 0px 0px 0px 10px rgb(1, 107, 24);
   -moz-box-shadow: inset 0px 0px 0px 10px rgb(1, 107, 24);
   box-shadow: inset 0px 0px 0px 10px rgb(1, 107, 24);
-}
+} */
 
 .bordas:hover {
   background-color: #4caf50;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  -webkit-box-shadow: inset 0px 0px 0px 5px rgb(1, 107, 24);
+  -moz-box-shadow: inset 0px 0px 0px 5px rgb(1, 107, 24);
+  box-shadow: inset 0px 0px 0px 5px rgb(1, 107, 24);
 }
 
 ::-webkit-scrollbar {
