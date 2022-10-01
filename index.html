@@ -22,18 +22,19 @@
                 Lista de Compras
             </h2>
             <button onclick="LimparLista()">Limpar Lista</button>
+            <div style="border-top: 2px; border-width: 2px; border-color: green !important">
+                <ul id="lista_produto">
+                </ul>
+            </div>
+            
+
+            <br/>
             <tfoot>
                 <tr>
                     <td colspan="3" class="texto">Total da Compra</td>
                     <td><span id="total"></span></td>
                 </tr>
             </tfoot>
-            <ul id="lista_produto">
-
-            </ul>
-
-
-
 
         </div>
         <!-- <div class="models">
@@ -91,7 +92,7 @@
 
 
         <div class="lista-produtos">
-            <div class="product-card" data-id="1">
+            <div class="product-card, bordas" data-id="1">
                 <img src="images/p1_preview_rev_1.png" alt="" width="200px">
                 <div class="product-card-description">
                     <div button id="btn_p1"
