@@ -22,18 +22,19 @@
                 Lista de Compras
             </h2>
             <button onclick="LimparLista()">Limpar Lista</button>
+            <div style="border-top: 2px; border-width: 2px; border-color: green !important">
+                <ul id="lista_produto">
+                </ul>
+            </div>
+            
+
+            <br/>
             <tfoot>
                 <tr>
                     <td colspan="3" class="texto">Total da Compra</td>
                     <td><span id="total"></span></td>
                 </tr>
             </tfoot>
-            <ul id="lista_produto">
-
-            </ul>
-
-
-
 
         </div>
         <!-- <div class="models">
@@ -91,7 +92,7 @@
 
 
         <div class="lista-produtos">
-            <div class="product-card" data-id="1">
+            <div class="product-card, bordas" data-id="1">
                 <img src="images/p1_preview_rev_1.png" alt="" width="200px">
                 <div class="product-card-description">
                     <div button id="btn_p1"
@@ -105,7 +106,7 @@
 
 
             </div>
-            <div class="product-card" data-id="2">
+            <div class="product-card, bordas" data-id="2">
                 <img src="images/camisa azul_preview_rev_1.png" alt="" width="200px">
                 <div class="product-card-description">
                     <div button id="btn_p1"
@@ -119,7 +120,7 @@
 
 
             </div>
-            <div class="product-card" data-id="3">
+            <div class="product-card, bordas" data-id="3">
                 <img src="images/camisa1.png" alt="" width="200px">
                 <div button id="btn_p1"
                     onclick="AdicionarProdutoNoCarrinho(3, 'Camisa Pulma Palmeiras 3', 299.99, document.getElementById('quantidade-produto-3').value)"
@@ -131,7 +132,7 @@
                 <input id="quantidade-produto-3" class="qtd" type="number" value="1" min="1" max="10">
 
             </div>
-            <div class="product-card" data-id="4">
+            <div class="product-card, bordas" data-id="4">
                 <img src="images/camisa2.png" alt="" width="200px">
                 <div button id="btn_p1"
                     onclick="AdicionarProdutoNoCarrinho(4, 'Camisa Pulma Palmeiras 4', 299.99, document.getElementById('quantidade-produto-4').value)"
@@ -143,7 +144,7 @@
                 <input id="quantidade-produto-4" class="qtd" type="number" value="1" min="1" max="10">
 
             </div>
-            <div class="product-card" data-id="5">
+            <div class="product-card, bordas" data-id="5">
                 <img src="images/camisa3_preview_rev_1.png" alt="" width="200px">
                 <div button id="btn_p1"
                     onclick="AdicionarProdutoNoCarrinho(5, 'Camisa Pulma Palmeiras 1', 299.99, document.getElementById('quantidade-produto-5').value)"
@@ -155,7 +156,7 @@
                 <input id="quantidade-produto-5" class="qtd" type="number" value="1" min="1" max="10">
 
             </div>
-            <div class="product-card" data-id="6">
+            <div class="product-card, bordas" data-id="6">
                 <img src="images/camisa verde limao_preview_rev_1.png" alt="" width="200px">
                 <div button id="btn_p1"
                     onclick="AdicionarProdutoNoCarrinho(6, 'Camisa Pulma Palmeiras 1', 299.99, document.getElementById('quantidade-produto-6').value)"
