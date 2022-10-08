@@ -173,6 +173,7 @@ function LimparLista() {
   escreveTotal(0);
 }
 
+
 // console.log("MEU BOTAO", botao);
 // Estudar o que são seletores (Selectors)
 
